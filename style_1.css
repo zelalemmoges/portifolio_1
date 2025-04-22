@@ -1,0 +1,622 @@
+/* Reset default margin and set a clean, modern font for the page */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9ff; /* Soft light background for contrast */
+    
+      
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Main hero container that fills the full screen height */
+  .hero {
+    width: 100%;               /* Full width of the viewport */
+    height: 100vh;             /* Full height of the viewport */
+    display: flex;             /* Use flexbox for centering */
+    justify-content: center;   /* Horizontally center content */
+    align-items: center;       /* Vertically center content */
+    position: relative;        /* Allow positioning of inner elements */
+    overflow: hidden;          /* Hide anything outside the container */
+    background-color: #ffffff; /* White background for clean look */
+  }
+  
+  /* Text box inside the hero section */
+  .hero-text {
+    width: 70%;                /* Take up 70% of the parent width */
+    text-align: left;          /* Align text to the left */
+    color: #1f2937;            /* Dark grayish blue text color */
+    padding: 1rem;             /* Inner spacing */
+    margin-top: -120px;        /* Pull content slightly up for visual balance */
+  }
+  
+  /* Heading styles (main intro text) */
+  .hero-text h1 {
+    font-size: 3rem;           /* Large font size for heading */
+    font-weight: bold;         /* Make the text bold */
+    margin-bottom: 1rem;       /* Space below the heading */
+  }
+  
+  /* Highlighted span inside the heading */
+  .hero-text span {
+    color: #1f2937;            /* Keep the same color for consistency */
+  }
+  
+  /* Paragraph text inside hero */
+  .hero-text p {
+    font-size: 1.1rem;         /* Slightly larger than normal text */
+    line-height: 1.8;          /* Space between lines for readability */
+    color: #4b5563;            /* Medium gray color */
+    margin-bottom: 33px;       /* Space below paragraph */
+  }
+  
+  /* Styling for the "Let's Connect" link */
+  .connect a {
+    color: #7f56d9;            /* Purple-ish color for standout */
+    text-decoration: none;     /* Remove underline */
+    font-weight: bold;         /* Make it bold for emphasis */
+  }
+  
+  /* Style the social media icons */
+  .social-icons img {
+    width: 20px;               /* Set consistent icon size */
+    margin: 0 8px;             /* Horizontal space between icons */
+    margin-top: -24px;         /* Shift icons slightly upward */
+    cursor: pointer;           /* Change cursor to pointer on hover */
+  }
+
+  .profile-pic {
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    /* or bottom: 0; left: 0; etc. */
+    width: 150px; /* optional size */
+    height: auto;
+  }
+
+  .profile1-pic {
+    position: absolute;
+    top: 19px;
+    right: 77px;
+    /* or bottom: 0; left: 0; etc. */
+    width: 150px; /* optional size */
+    height: auto;
+  }
+  
+  .profile2-pic {
+    position: absolute;
+    top: 50px;
+    left: 85px;
+    /* or bottom: 0; left: 0; etc. */
+    width: 80px; /* optional size */
+    height: auto;
+  }
+
+  .profile3-pic {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    /* or bottom: 0; left: 0; etc. */
+    width: 80px; /* optional size */
+    height: auto;
+  }
+
+  .profile4-pic {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    /* or bottom: 0; left: 0; etc. */
+    width: 80px; /* optional size */
+    height: auto;
+  }
+
+  .profile5-pic {
+    position: absolute;
+    top: 13%;
+    left: 52%;
+    /* or bottom: 0; left: 0; etc. */
+    width: 30px; /* optional size */
+    height: auto;
+  }
+
+  .profile6-pic {
+    position: absolute;
+    top: 83%;
+    left: 20.77%;
+    /* or bottom: 0; left: 0; etc. */
+    width: 45px; /* optional size */
+    height: auto;
+  }
+
+  .profile7-pic {
+    position: absolute;
+    top: 86%;
+    left: 20%;
+    /* or bottom: 0; left: 0; etc. */
+    width: 45px; /* optional size */
+    height: auto;
+  }
+
+  .profile8-pic {
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    /* or bottom: 0; left: 0; etc. */
+    width: 45px; /* optional size */
+    height: auto;
+  }
+
+  .profile9-pic {
+    position: absolute;
+    top: 75.5%;
+    left: 59%;
+    /* or bottom: 0; left: 0; etc. */
+    width: 150px; /* optional size */
+    height: auto;
+  }
+
+
+/* Style the navbar container */
+.navbar {
+    display: flex;              /* Enables flexbox layout for horizontal alignment */
+    justify-content: flex-end;  /* Aligns items to the right side */
+    align-items: center;        /* Vertically centers items within the navbar */
+    padding: 1rem 2rem;         /* Adds spacing inside the navbar */
+    background-color: white;  /* Dark background for contrast */
+  }
+  
+  /* Style for the logo on the left */
+  .logo {
+    margin-right: auto;         /* Pushes everything else to the right */
+    font-size: 1.5rem;          /* Increases font size of the logo */
+    font-weight: bold;          /* Makes the logo text bold */
+    margin-left: 7%;
+    color: #6070ff; /* Sets logo color to a specific shade of blue */
+  }
+  
+  /* Style the list of navigation links */
+  .nav-links {
+    list-style: none;           /* Removes default bullet points */
+    display: flex;              /* Displays links in a horizontal row */
+    gap: 2.5rem;                /* Adds spacing between each link */
+    margin-right: 7%;                  /* Removes default margin */
+    padding: 0;                 /* Removes default padding */
+    
+  }
+  
+  /* Style individual links */
+  .nav-links a {
+    text-decoration: none;      /* Removes underline from links */
+    color: #344563;               /* Makes links white */
+    font-weight: 500;           /* Slightly bold links */
+    transition: color 0.3s;     /* Smooth transition on hover */
+  }
+  
+  /* Change link color when hovered */
+  .nav-links a:hover {
+    color: #00d1b2;             /* Bulma's turquoise color on hover */
+  }
+
+
+  /*   a code for the cards*/
+
+  /* ==========================
+   🌟 Project Section Wrapper
+   ========================== */
+.projects-section {
+    max-width: 1100px;              /* Constrains content width */
+    margin: 0 auto;                 /* Centers the section */
+    padding: 6rem 1rem;             /* Adds vertical spacing */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;                      /* Space between project cards */
+    background-color: #f9f9f9;      /* Light background for contrast */
+  }
+
+
+/* =======================
+   💼 Project Card Layout
+   ======================= */
+   .project-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    border-radius: 24px;            /* Rounded corners */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);  /* Soft shadow */
+    overflow: hidden;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: center;
+    transition: transform 0.3s ease;  /* Smooth hover animation */
+  }
+  
+  /* Hover effect: slight lift */
+.project-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Alternate layout: reverse flex direction for even cards */
+  .project-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  /* ======================
+     🖼️ Project Image Styles
+     ====================== */
+  .project-card img {
+    width: 50%;
+    border-radius: 16px;
+    object-fit: cover;             /* Maintain aspect ratio, fill container */
+  }
+  
+  /* ===========================
+     📝 Project Details Section
+     =========================== */
+  .project-details {
+    width: 50%;
+  }
+  
+  /* Project title */
+  .project-details h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1c1e53;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Meta information (company • role • year) */
+  .meta {
+    font-size: 0.9rem;
+    color: #6b6f76;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Project description */
+  .description {
+    font-size: 1rem;
+    color: #4b4f58;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* ==================
+     🏷️ Tech Badges Row
+     ================== */
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Individual tech badge */
+  .badge {
+    background-color: #ebebeb;
+    color:#6070ff;
+    background-color: #ebebff;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;           /* Fully rounded for pill shape */
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+  
+  /* =====================
+     🔘 CTA Button Styling
+     ===================== */
+  .project-btn {
+    background-color: transparent;
+    border: 2px solid #6070ff;
+    color: #6070ff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .project-btn:hover {
+    background-color: #6070ff;
+    color: white;
+  }
+
+
+
+  /*   this is for the about section    */
+
+  .about-section {
+    display: flex;
+    gap: 3rem;
+    padding: 4rem 1rem;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    border-top-right-radius: 80px;
+    background-color: white;
+    text-align: center;
+    justify-content: center; /* center the content horizontally */
+    align-items: center; /* center the content vertically */
+  }
+  
+  .about-left {
+    flex: 1;
+    min-width: 280px;
+    max-width: 30%;
+    text-align: left;
+  }
+  
+  .about-left h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+  }
+  
+  .about-left p {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-top: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .connect-label a {
+    text-decoration: none; /* Remove underline */
+    margin-top: 2rem;
+    color: #7f56d9;
+    font-weight: 600;
+    
+  }
+  
+  .social-icons {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    padding: 0;
+    margin: 1rem 0 2rem;
+  }
+  
+  .social-icons li a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+  }
+  
+  .social-icons li a:hover img {
+    transform: scale(1.1);
+  }
+  
+  .resume-btn {
+    padding: 0.6rem 1.5rem;
+    background-color: transparent;
+    color: #6070FF;
+    border: 2px solid #6070ff;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .resume-btn:hover {
+    background-color: #6070ff;
+    color: white;
+  }
+  
+  .about-right {
+    flex: 1;
+    min-width: 280px;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+  }
+  
+  .card {
+    
+    
+    padding: 1.5rem;
+    
+  }
+  
+  .card.collapsed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: rgb(200, 192, 192) solid 1px;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F7F7F9;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    flex: 1;
+    position: relative;
+    gap: 1rem; /* adds space between items */
+  }
+  
+  .skill-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    
+  }
+  .skill-item p {
+    font-size: 0.9rem;
+    color: #4b5563;
+    margin-top: 6rem;
+    text-align: left;
+  }
+
+
+
+
+  /* this is for the last section */
+  .contact-section {
+    
+    background-color: #5f6dfb; /* or any blue gradient you like */
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-top-left-radius: 80px;
+    position: relative;
+    padding-bottom: 170px;
+    margin-bottom: 0 auto;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  }
+  
+  .contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-inline: auto;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 25%;
+   margin-left: 30.44rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    resize: none;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #999;
+  }
+  
+  .contact-form button {
+    background-color: white;
+    color: #5f6dfb;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 40%;
+    margin-left: 7rem;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e1e4fd;
+  }
+  
+  .profile-picc {
+    position: absolute;
+    top: 130px;
+    right: 50px;
+    /* or bottom: 0; left: 0; etc. */
+    width: 150px; /* optional size */
+    height: auto;
+  }
+
+  .profile1-picc {
+    position: absolute;
+    top: 70px;
+    right: 87px;
+    /* or bottom: 0; left: 0; etc. */
+    width: 150px; /* optional size */
+    height: auto;
+  }
+
+  .profile6-picc {
+    position: absolute;
+    top: 530px;
+    right: 170px;
+    /* or bottom: 0; left: 0; etc. */
+    width: 70px; /* optional size */
+    height: auto;
+  }
+
+
+    .profile7-picc {
+    position: absolute;
+    top: 150px;
+    right: 1100px;
+    /* or bottom: 0; left: 0; etc. */
+    width: 40px; /* optional size */
+    height: auto;
+  }
+
+  .profile4-picc {
+    position: absolute;
+    top: 350px;
+    right: 1200px;
+    /* or bottom: 0; left: 0; etc. */
+    width: 120px; /* optional size */
+    height: auto;
+  }
+
+  .profile5-picc {
+    position: absolute;
+    top: 410px;
+    right: 1250px;
+    /* or bottom: 0; left: 0; etc. */
+    width: 60px; /* optional size */
+    height: auto;
+  }
+
+  .profile3-picc {
+    position: absolute;
+    top: 630px;
+    right: 1000px;
+    /* or bottom: 0; left: 0; etc. */
+    width: 75px; /* optional size */
+    height: auto;
+  }
+
+  .profile2-picc {
+    position: absolute;
+    top: 660px;
+    right: 985px;
+    /* or bottom: 0; left: 0; etc. */
+    width: 60px; /* optional size */
+    height: auto;
+  }
