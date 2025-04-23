@@ -620,3 +620,86 @@ body {
     width: 60px; /* optional size */
     height: auto;
   }
+
+
+ @media (max-width: 768px) {
+ 
+    /* Reduce the size of the greeting part */
+    .hero-text h1 {
+      font-size: 2rem; /* Smaller font size for heading */
+    }
+
+    .hero-text p {
+      font-size: 0.9rem; /* Smaller font size for paragraph */
+      line-height: 1.5;  /* Adjust line height for readability */
+    }
+
+    .hero-text {
+      width: 90%; /* Adjust width for smaller screens */
+      padding: 0.5rem; /* Reduce padding */
+      margin-top: -60px; /* Adjust margin for better alignment */
+    }
+    /* Remove decorative SVG images */
+    .profile-pic,
+    .profile1-pic,
+    .profile2-pic,
+    .profile3-pic,
+    .profile4-pic,
+    .profile5-pic,
+    .profile6-pic,
+    .profile7-pic,
+    .profile8-pic,
+    .profile9-pic {
+      display: none;
+    }
+  
+    .profile-picc,
+    .profile1-picc,
+    .profile2-picc,
+    .profile3-picc,
+    .profile4-picc,
+    .profile5-picc,
+    .profile6-picc,
+    .profile7-picc {
+      display: none;
+    }
+  
+    /* 2. Reorder the card components */
+    .card-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .project-card {
+      flex-direction: column; /* Stack items vertically */
+      width: 100%;           /* Full width for smaller screens */
+    }
+  
+    .project-card img {
+      width: 100%;           /* Full width for images */
+      height: auto;          /* Maintain aspect ratio */
+    }
+  
+    /* Remove specific images for project 2 and project 4 on mobile screens */
+    .project-card img[src="project2.svg"],
+    .project-card img[src="project4.svg"] {
+      display: none;         /* Hide the images for these projects */
+    }
+  
+    .project-details {
+      width: 100%;           /* Full width for details */
+    }
+  
+    .see-project {
+      order: 2;
+    }
+  
+    /* 3. Ensure contact form input does not disappear */
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 1rem;
+    }
+  }
+  
